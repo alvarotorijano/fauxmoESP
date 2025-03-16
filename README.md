@@ -133,6 +133,8 @@ Current status of the library:
 
 * Latest version of ESP Async Webserver fails building with the current setup. Use version 1.2.2 max. See fauxmoESP_External_Server example `platformio.ini` file.
 
+* It is possible to find platformio trying to compile crap. Add this flag to your platformio.ini in order to avoid compiling libraries that are not being used or belongs to other platforms: lib_compat_mode=strict
+
 [1]:https://github.com/esp8266/Arduino
 [2]:http://docs.platformio.org/en/stable/platforms/espressif8266.html#using-arduino-framework-with-staging-version
 [3]:https://github.com/me-no-dev/ESPAsyncTCP
